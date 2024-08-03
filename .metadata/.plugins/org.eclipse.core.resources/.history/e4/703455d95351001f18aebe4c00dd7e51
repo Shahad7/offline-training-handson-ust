@@ -1,0 +1,5 @@
+spring.application.name=FirstRestJpaMySQL
+server.port=5000
+#changing the port again for next build for aws beanstalk demo
+#adding new configs for aws ecs ci/cd pipeline demo
+

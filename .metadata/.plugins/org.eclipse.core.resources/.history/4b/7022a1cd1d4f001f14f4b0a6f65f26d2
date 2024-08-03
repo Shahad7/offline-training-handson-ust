@@ -1,0 +1,22 @@
+package com.mq.demo.consumer;
+
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+
+public class PurchaseOrderConsumer {
+//	@Autowired
+//	private RabbitTemplate template;
+	
+	@Value("${mq.demo.exchange}")
+	String exchange;
+	
+	@Value("${mq.demo.queue}")
+	String queue_name;
+	
+	@Value("${}mq.demo.routingkey")
+	String routing_key;
+	
+	
+
+}

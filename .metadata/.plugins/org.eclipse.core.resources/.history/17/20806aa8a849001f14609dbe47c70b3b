@@ -1,0 +1,5 @@
+package com.handson.microservices.controller;
+
+public class ClientController {
+
+}

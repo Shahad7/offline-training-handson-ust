@@ -13,7 +13,7 @@ public class Apple implements Item {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	long productID;
 
-	float price;
+	double price;
 
 	int availability;
 
@@ -22,7 +22,7 @@ public class Apple implements Item {
 	String shelf_life;
 
 
-		public Apple(long productID, float price, int availability, String type, String shelf_life) {
+		public Apple(long productID, double price, int availability, String type, String shelf_life) {
 
 		super();
 
@@ -40,9 +40,9 @@ public class Apple implements Item {
 		public Apple(Map<String,Object> map) {
 			
 
-			this.productID = (long) map.get("productID");
+			//this.productID = (long) map.get("productID");
 
-			this.price = (float) map.get("price");
+			this.price = (double) map.get("price");
 
 			this.availability = (int) map.get("availability");
 
@@ -84,7 +84,7 @@ public class Apple implements Item {
 
 
 
-		public float getPrice() {
+		public double getPrice() {
 
 			return price;
 
@@ -94,7 +94,7 @@ public class Apple implements Item {
 
 
 
-		public void setPrice(float price) {
+		public void setPrice(double price) {
 
 			this.price = price;
 

@@ -1,0 +1,50 @@
+package com.spring_app.store.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.spring_app.repository.AppleRepository;
+import com.spring_app.repository.BreadRepository;
+import com.spring_app.repository.ChocolateRepository;
+import com.spring_app.repository.EggRepository;
+import com.spring_app.repository.MilkRepository;
+import com.spring_app.store.items.Apple;
+import com.spring_app.store.items.Bread;
+import com.spring_app.store.items.Chocolate;
+import com.spring_app.store.items.Egg;
+import com.spring_app.store.items.Item;
+import com.spring_app.store.items.Milk;
+
+@Service
+public class StoreService {
+	
+	@Autowired
+	EggRepository eggRepository;
+	
+	@Autowired
+	AppleRepository appleRepository;
+	
+	@Autowired
+	MilkRepository milkRepository;
+	@Autowired
+	BreadRepository breadRepository;
+	@Autowired
+	ChocolateRepository chocolateRepository;
+	
+	public Item addItem(Item item,String type) {
+		if(type.equals("apple"))
+		return appleRepository.save((Apple) item);
+		if(type.equals("egg"))
+			return eggRepository.save((Egg) item);
+		if(type.equals("bread"))
+			return breadRepository.save((Bread) item);
+		if(type.equals("milk"))
+			return milkRepository.save((Milk) item);
+		if(type.equals("chocolate"))
+			return chocolateRepository.save((Chocolate) item);
+		return null;
+		
+	}
+	
+	
+}

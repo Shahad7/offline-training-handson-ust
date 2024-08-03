@@ -16,11 +16,9 @@ public class Egg implements Item {
 
 
 
-	public Egg(long productID, float price, String type, String shelf_life, int availability) {
+	public Egg(long productID, double price, String type, String shelf_life, int availability) {
 
 		super();
-
-		this.productID = productID;
 
 		this.price = price;
 
@@ -33,10 +31,9 @@ public class Egg implements Item {
 	}
 	
 	public Egg(Map<String,Object> map) {
-		
-		this.productID = (long) map.get("productID");
 
-		this.price = (float) map.get("price");
+
+		this.price = (double) map.get("price");
 
 		this.type = (String) map.get("type");
 
@@ -52,7 +49,7 @@ public class Egg implements Item {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	long productID;
 
-	float price;
+	double price;
 
 	String type;
 
@@ -88,7 +85,7 @@ public class Egg implements Item {
 
 
 
-	public float getPrice() {
+	public double getPrice() {
 
 		return price;
 
@@ -96,7 +93,7 @@ public class Egg implements Item {
 
 
 
-	public void setPrice(float price) {
+	public void setPrice(double price) {
 
 		this.price = price;
 

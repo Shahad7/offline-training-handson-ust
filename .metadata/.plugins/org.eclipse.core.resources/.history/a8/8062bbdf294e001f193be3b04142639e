@@ -1,0 +1,15 @@
+package com.spring_app.store;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@ComponentScan({"com.spring_app.store","com.spring_app.store.repository"})
+public class SpringStoreApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringStoreApplication.class, args);
+	}
+
+}

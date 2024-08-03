@@ -1,0 +1,3 @@
+spring.application.name=spring-boot-security-jdbc
+
+spring.datasourse.url=jdbc:mysql://localhost:3306/?user=root

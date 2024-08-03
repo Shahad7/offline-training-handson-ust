@@ -1,0 +1,543 @@
+package com.spring_app.store.items;
+
+
+public class Apple implements Comparable<Apple> {
+
+		public Apple(long productID, float price, int availability, String type, String shelf_life) {
+
+		super();
+
+		this.productID = productID;
+
+		this.price = price;
+
+		this.availability = availability;
+
+		this.type = type;
+
+		this.shelf_life = shelf_life;
+
+	}
+
+		
+
+		
+
+		public Apple() {
+
+			super();
+
+		}
+
+		
+
+
+
+		public long getProductID() {
+
+			return productID;
+
+		}
+
+
+
+
+
+		public void setProductID(long productID) {
+
+			this.productID = productID;
+
+		}
+
+
+
+
+
+		public float getPrice() {
+
+			return price;
+
+		}
+
+
+
+
+
+		public void setPrice(float price) {
+
+			this.price = price;
+
+		}
+
+
+
+
+
+		public int getAvailability() {
+
+			return availability;
+
+		}
+
+
+
+
+
+		public void setAvailability(int availability) {
+
+			this.availability = availability;
+
+		}
+
+
+
+
+
+		public String getType() {
+
+			return type;
+
+		}
+
+
+
+
+
+		public void setType(String type) {
+
+			this.type = type;
+
+		}
+
+
+
+
+
+		public String getShelf_life() {
+
+			return shelf_life;
+
+		}
+
+
+
+
+
+		public void setShelf_life(String shelf_life) {
+
+			this.shelf_life = shelf_life;
+
+		}
+
+
+
+
+
+		long productID;
+
+		float price;
+
+		int availability;
+
+		String type;
+
+		String shelf_life;
+
+		@Override
+
+		public int compareTo(Apple o) {
+
+			// TODO Auto-generated method stub
+
+			return (int) (this.price - o.price);
+
+		}
+
+}
+
+
+
+2
+
+
+
+
+
+
+
+3
+
+package com.store.items;
+
+
+
+public class Chocolate {
+
+
+
+		
+
+	public Chocolate() {
+
+		// TODO Auto-generated constructor stub
+
+	}
+
+		public Chocolate(long productID, String brand, float price, String type, String expiry, int availability,
+
+			String[] contents, String[] nutrition_info, int no_of_pieces, float weight) {
+
+		super();
+
+		this.productID = productID;
+
+		this.brand = brand;
+
+		this.price = price;
+
+		this.type = type;
+
+		this.expiry = expiry;
+
+		this.availability = availability;
+
+		this.contents = contents;
+
+		this.nutrition_info = nutrition_info;
+
+		this.no_of_pieces = no_of_pieces;
+
+		this.weight = weight;
+
+	}
+
+		long productID;
+
+		String brand;
+
+		float price;
+
+		String type;
+
+		String expiry;
+
+		int availability;
+
+		String[] contents;
+
+		String[] nutrition_info;
+
+		int no_of_pieces;
+
+		float weight;
+
+		public long getProductID() {
+
+			return productID;
+
+		}
+
+		public void setProductID(long productID) {
+
+			this.productID = productID;
+
+		}
+
+		public String getBrand() {
+
+			return brand;
+
+		}
+
+		public void setBrand(String brand) {
+
+			this.brand = brand;
+
+		}
+
+		public float getPrice() {
+
+			return price;
+
+		}
+
+		public void setPrice(float price) {
+
+			this.price = price;
+
+		}
+
+		public String getType() {
+
+			return type;
+
+		}
+
+		public void setType(String type) {
+
+			this.type = type;
+
+		}
+
+		public String getExpiry() {
+
+			return expiry;
+
+		}
+
+		public void setExpiry(String expiry) {
+
+			this.expiry = expiry;
+
+		}
+
+		public int getAvailability() {
+
+			return availability;
+
+		}
+
+		public void setAvailability(int availability) {
+
+			this.availability = availability;
+
+		}
+
+		public String[] getContents() {
+
+			return contents;
+
+		}
+
+		public void setContents(String[] contents) {
+
+			this.contents = contents;
+
+		}
+
+		public String[] getNutrition_info() {
+
+			return nutrition_info;
+
+		}
+
+		public void setNutrition_info(String[] nutrition_info) {
+
+			this.nutrition_info = nutrition_info;
+
+		}
+
+		public int getNo_of_pieces() {
+
+			return no_of_pieces;
+
+		}
+
+		public void setNo_of_pieces(int no_of_pieces) {
+
+			this.no_of_pieces = no_of_pieces;
+
+		}
+
+		public float getWeight() {
+
+			return weight;
+
+		}
+
+		public void setWeight(float weight) {
+
+			this.weight = weight;
+
+		}
+
+		
+
+		
+
+}
+
+
+
+
+
+5
+
+
+
+package com.store.items;
+
+
+
+public class Milk {
+
+
+
+
+
+		public Milk() {
+
+			// TODO Auto-generated constructor stub
+
+		}
+
+
+
+		public Milk(long productID, String brand, float price, String type, String expiry, int availability,
+
+			float quantity) {
+
+		super();
+
+		this.productID = productID;
+
+		this.brand = brand;
+
+		this.price = price;
+
+		this.type = type;
+
+		this.expiry = expiry;
+
+		this.availability = availability;
+
+		this.quantity = quantity;
+
+	}
+
+		long productID;
+
+		String brand;
+
+		float price;
+
+		String type;
+
+		String expiry;
+
+		int availability;
+
+		//Milliliter
+
+		float quantity;
+
+		public long getProductID() {
+
+			return productID;
+
+		}
+
+
+
+		public void setProductID(long productID) {
+
+			this.productID = productID;
+
+		}
+
+
+
+		public String getBrand() {
+
+			return brand;
+
+		}
+
+
+
+		public void setBrand(String brand) {
+
+			this.brand = brand;
+
+		}
+
+
+
+		public float getPrice() {
+
+			return price;
+
+		}
+
+
+
+		public void setPrice(float price) {
+
+			this.price = price;
+
+		}
+
+
+
+		public String getType() {
+
+			return type;
+
+		}
+
+
+
+		public void setType(String type) {
+
+			this.type = type;
+
+		}
+
+
+
+		public String getExpiry() {
+
+			return expiry;
+
+		}
+
+
+
+		public void setExpiry(String expiry) {
+
+			this.expiry = expiry;
+
+		}
+
+
+
+		public int getAvailability() {
+
+			return availability;
+
+		}
+
+
+
+		public void setAvailability(int availability) {
+
+			this.availability = availability;
+
+		}
+
+
+
+		public float getQuantity() {
+
+			return quantity;
+
+		}
+
+
+
+		public void setQuantity(float quantity) {
+
+			this.quantity = quantity;
+
+		}
+
+		
+
+		
+
+
+
+}
+
+
+

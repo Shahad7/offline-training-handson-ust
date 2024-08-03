@@ -1,0 +1,60 @@
+package com.spring_app.store.service;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.spring_app.store.items.Apple;
+import com.spring_app.store.items.Bread;
+import com.spring_app.store.items.Chocolate;
+import com.spring_app.store.items.Egg;
+import com.spring_app.store.items.Item;
+import com.spring_app.store.items.Milk;
+import com.spring_app.store.repository.AppleRepository;
+import com.spring_app.store.repository.BreadRepository;
+import com.spring_app.store.repository.ChocolateRepository;
+import com.spring_app.store.repository.EggRepository;
+import com.spring_app.store.repository.MilkRepository;
+
+@Service
+public class StoreService {
+	
+	@Autowired
+	EggRepository eggRepository;
+	@Autowired
+	AppleRepository appleRepository;
+	@Autowired
+	MilkRepository milkRepository;
+	@Autowired
+	BreadRepository breadRepository;
+	@Autowired
+	ChocolateRepository chocolateRepository;
+	
+	public Item addItem(Map<String,Object> map) {
+		if(((String)map.get("type")).equals("apple")) {
+		return appleRepository.save(new Apple(map));
+		}
+		
+		if(((String)map.get("type")).equals("egg")) {
+			return eggRepository.save(new Egg());
+		}
+		
+		if(((String)map.get("type")).equals("bread")) {
+			return breadRepository.save(new Bread());
+		}
+		
+		if(((String)map.get("type")).equals("milk")) {
+			return milkRepository.save(new Milk());
+		}
+		
+		if(((String)map.get("type")).equals("chocolate")) {
+			return chocolateRepository.save(new Chocolate());
+		}
+		
+		return null;
+		
+	}
+	
+	
+}

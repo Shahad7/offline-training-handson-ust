@@ -1,0 +1,10 @@
+package com.spring_app.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.spring_app.store.items.Apple;
+import com.spring_app.store.items.Item;
+
+public interface StoreRepository extends JpaRepository<Item, Long> {
+
+}

@@ -1,0 +1,8 @@
+package com.feign.demo.model;
+
+public class Product {
+	long productID;
+	String name;
+	String brand;
+	double price;
+}

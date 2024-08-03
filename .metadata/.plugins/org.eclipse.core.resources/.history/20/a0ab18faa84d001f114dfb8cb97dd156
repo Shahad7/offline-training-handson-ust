@@ -1,0 +1,35 @@
+package com.spring_app.store.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.spring_app.repository.AppleRepository;
+import com.spring_app.repository.BreadRepository;
+import com.spring_app.repository.ChocolateRepository;
+import com.spring_app.repository.EggRepository;
+import com.spring_app.repository.MilkRepository;
+import com.spring_app.store.items.Item;
+
+@Service
+public class StoreService {
+	
+	@Autowired
+	EggRepository eggRepository;
+	
+	@Autowired
+	AppleRepository appleRepository;
+	
+	@Autowired
+	MilkRepository milkRepository;
+	@Autowired
+	BreadRepository breadRepository;
+	@Autowired
+	ChocolateRepository chocolateRepository;
+	
+	public Item addItem(Item item) {
+		if(item)
+		return null;
+	}
+	
+	
+}

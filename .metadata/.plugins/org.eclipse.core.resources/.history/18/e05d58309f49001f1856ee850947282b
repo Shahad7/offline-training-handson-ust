@@ -1,0 +1,14 @@
+package com.handson.microservices;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+@EnableEurekaService
+public class EurekaRegistryServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EurekaRegistryServiceApplication.class, args);
+	}
+
+}

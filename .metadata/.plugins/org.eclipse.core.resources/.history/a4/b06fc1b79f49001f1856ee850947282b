@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-registry-service
+    
+eureka:
+  client:
+  #you don't register the Service Discovery in the Service Discovery!
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0

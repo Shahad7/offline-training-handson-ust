@@ -1,0 +1,5 @@
+package com.mq.demo.consumer;
+
+public class PurchaseOrderConsumer {
+
+}

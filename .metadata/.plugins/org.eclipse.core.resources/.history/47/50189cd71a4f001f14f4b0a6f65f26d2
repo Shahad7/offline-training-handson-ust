@@ -1,0 +1,31 @@
+package com.mq.demo.config;
+
+import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.core.TopicExchange;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MessagingConfig {
+	
+	@Value("${mq.demo.exchange}")
+	String exchange;
+	
+	@Value("${mq.demo.queue}")
+	String queue_name;
+	
+	@Value("${}mq.demo.routingkey")
+	String routing_key;
+
+	@Bean
+	public Queue queue() {
+		return new Queue(queue_name);
+	}
+	
+	@Bean
+	public TopicExchange topicExchange() {
+		return new TopicExchange(exchange);
+	}
+	
+}

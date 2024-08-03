@@ -1,0 +1,7 @@
+spring.application.name=rabbitMQ-demo
+
+mq.demo.exchange=mq_exchange
+mq.demo.queue=mq_queue
+mq.demo.routingkey=mq_routingKey
+
+server.port=8082

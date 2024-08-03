@@ -1,0 +1,13 @@
+package com.sleuth.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SleuthServiceDemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SleuthServiceDemoApplication.class, args);
+	}
+
+}

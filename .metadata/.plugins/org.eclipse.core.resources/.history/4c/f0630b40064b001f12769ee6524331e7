@@ -1,0 +1,40 @@
+package com.feign.demo.resources;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.feign.demo.interfaces.FeignInterface;
+import com.feign.demo.model.Product;
+
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
+@RestController
+@RequestMapping("/client")
+public class Controller {
+
+	@Autowired
+	FeignInterface client;
+	
+	@CircuitBreaker
+	@GetMapping("/products")
+	public List<Product> getProducts(){
+		return client.getProducts();
+	}
+	
+	@GetMapping("/product/{id}")
+	public Product getProductByID(@PathVariable long id){
+		return client.getProductById(id);
+	}
+	
+	@GetMapping("/product-cat/{category}")
+	public Product getProductByCategory(@PathVariable String category){
+		return client.getProductByCategory(category);
+	}
+	
+	
+}

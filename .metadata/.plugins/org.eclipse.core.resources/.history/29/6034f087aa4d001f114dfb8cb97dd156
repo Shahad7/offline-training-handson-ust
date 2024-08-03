@@ -1,0 +1,23 @@
+package com.spring_app.store.controller;
+
+import java.util.HashMap;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.spring_app.store.items.Apple;
+import com.spring_app.store.items.Item;
+
+@RestController
+@RequestMapping("api/v1")
+public class ItemController {
+
+	@PostMapping("/item")
+	public Item addItem(@RequestBody HashMap<String, Object> map) {
+		System.out.println(Apple.class.get);
+		return null;
+		
+	}
+}

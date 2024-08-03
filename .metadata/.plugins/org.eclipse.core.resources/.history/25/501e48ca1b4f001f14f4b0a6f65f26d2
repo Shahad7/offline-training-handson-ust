@@ -1,0 +1,6 @@
+package com.mq.demo.model;
+
+public class OrderStatus {
+	
+	private PurchaseOrder order; 
+}

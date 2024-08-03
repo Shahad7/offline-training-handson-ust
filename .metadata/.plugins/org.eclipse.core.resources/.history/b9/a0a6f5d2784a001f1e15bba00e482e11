@@ -1,0 +1,5 @@
+package com.feign.demo.service;
+
+public class ProductServiceImpl {
+
+}

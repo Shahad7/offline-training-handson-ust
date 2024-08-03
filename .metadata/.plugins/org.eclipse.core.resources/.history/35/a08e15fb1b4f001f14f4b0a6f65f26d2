@@ -1,0 +1,5 @@
+package com.mq.demo.publisher;
+
+public class PurchaseOrderPublisher {
+
+}

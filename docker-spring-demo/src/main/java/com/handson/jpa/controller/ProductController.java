@@ -13,4 +13,9 @@ public class ProductController {
 	public String testDocker() {
 		return "docker says hello";
 	}
+	
+	@GetMapping("/ci-cd-test")
+	public String testCICD() {
+		return "change from new commit was integrated and deployed";
+	}
 }

@@ -1,0 +1,5 @@
+package com.spring_app.store.service;
+
+public class StoreService {
+
+}

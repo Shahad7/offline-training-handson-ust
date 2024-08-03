@@ -33,7 +33,7 @@ public class StoreService {
 	
 	public Item addItem(Map<String,Object> map) {
 		if(((String)map.get("item-type")).equals("apple")) {
-		return appleRepository.save(new Apple(map));
+		return (Item) appleRepository.save(new Apple(map));
 		}
 		
 		if(((String)map.get("item-type")).equals("egg")) {

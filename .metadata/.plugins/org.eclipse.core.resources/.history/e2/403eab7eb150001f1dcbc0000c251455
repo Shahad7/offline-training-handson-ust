@@ -1,0 +1,12 @@
+spring.application.name=FirstRestJpaMySQL
+server.port=5000
+
+#to confiure jpa ddl operations; this one helps to create tables automatically ig
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+
+spring.datasource.hikari.jdbc-url=jdbc:mysql:aws://db1.c76o0quuqvcx.us-east-1.rds.amazonaws.com
+spring.datasource.username=admin
+spring.datasource.password=awsRDS1234
+
