@@ -1,0 +1,8 @@
+package com.lambda.demo;
+
+public class Snippet {
+	public static void main(String[] args) {
+		Log4j.logger.org.apache.kafka=OFF
+	}
+}
+

@@ -1,0 +1,15 @@
+package kafka_producer.utils;
+
+import java.util.Properties;
+import org.apache.kafka.clients.producer.KafkaProducer;
+
+public class Producer {
+	public static void main(String[] args) {
+		
+		Properties props = new Properties();
+		props.put("bootstarp.server", "localhost:9092");
+		props.put("key.serializer", "org.apache.kafka.common.serialization.IntegerSerializer");
+		props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+		Producer<Integer,String> producer = new KafkaProducer<>(props);
+	}
+}

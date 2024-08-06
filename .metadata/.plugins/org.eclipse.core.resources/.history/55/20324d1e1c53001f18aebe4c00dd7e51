@@ -1,0 +1,19 @@
+package kafka_consumer.utils;
+
+import java.util.Properties;
+
+import org.apache.kafka.clients.consumer.Consumer;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.PropertyConfigurator;
+
+
+public class TestConsumer {
+	public static void main(String[] args) {
+		
+	BasicConfigurator.configure();
+	
+	Properties props = new Properties();
+	props.put("bootstrap.servers", "localhost:9092");
+}

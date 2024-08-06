@@ -1,0 +1,8 @@
+package com.lambda.demo;
+
+public class HelloLambda {
+
+	public String handleRequest() {
+		return "Hello AWS Lambda";
+	}
+}

@@ -1,0 +1,5 @@
+package kafka_producer.utils;
+
+public class Producer {
+
+}

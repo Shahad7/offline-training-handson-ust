@@ -1,0 +1,10 @@
+package serialization_demo;
+
+import java.io.Serializable;
+
+public class PurchaseOrder implements Serializable{
+	private String orderID;
+	private String company;
+	private int quantity;
+	private double price;
+}

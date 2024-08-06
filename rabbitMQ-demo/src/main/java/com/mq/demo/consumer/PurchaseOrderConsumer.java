@@ -28,6 +28,7 @@ public class PurchaseOrderConsumer {
 	@RabbitListener(queues = "mq_queue")
 	public void consumeMessageFromQueue(OrderStatus orderStatus) {
 		logger.info("Message received from Queue : "+orderStatus);
+		System.out.println(orderStatus);
 	}
 	
 	

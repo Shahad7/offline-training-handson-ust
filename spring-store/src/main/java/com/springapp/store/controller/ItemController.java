@@ -1,8 +1,11 @@
 package com.springapp.store.controller;
 
 import java.util.HashMap;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,5 +26,10 @@ public class ItemController {
 				
 		return service.addItem(map);
 		
+	}
+	
+	@GetMapping("/items/{item_type}")
+	public List<Item> getItems(@PathVariable String item_type){
+		return service.getItemsOfType(item_type);
 	}
 }
