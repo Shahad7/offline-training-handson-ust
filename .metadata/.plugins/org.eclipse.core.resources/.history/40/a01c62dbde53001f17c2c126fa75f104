@@ -1,0 +1,7 @@
+package snippet;
+
+public class Snippet {
+	Error 400: invalid_request
+	Request details: flowName=GeneralOAuthFlow
+}
+
