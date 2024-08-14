@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+    console.log(isNaN("hello"))
+    //doesn't convert value to number before checking
+    console.log(Number.isNaN("10"))
+    console.log("welcome to js")
+    //var is scoped to the immediate enclosing function body and global scoped 
+    //when it's at the top level while let is block scoped
+    let n = parseInt(prompt("enter the number"))
+    function factorial(n){
+        if(n==1||n==0)
+            return 1;
+        return n*factorial(n-1)
+    }
+    console.log(factorial(n))
+
+    for(let i=1;i<7;i++){
+        document.writeln(`<h${i} style="text-align:center; letter-spacing:2px;">JavaScript</h${i}>`)
+    }
+    for(let i=6;i>=1;i--){
+        document.writeln(`<h${i} style="text-align:center; letter-spacing:2px;">JavaScript</h${i}>`)
+    }
+
+    const square = (n)=> n*n;
+    const sum = (a,b) => a+b;
+    const diff = (a,b) => b-a;
+
+    const isEven = (n) => n%2==0;
+    const printMsg = (evenFun, n)=>{
+        console.log(`${n} is an ${isEven(n)?'even':'odd'} number`)
+    }
+
+    printMsg(isEven,15)
+    let jsonRef = {
+        data : [
+        {company:"Google",location:"San Francico",country:"USA",no_of_employees:1000},
+        {company:"Infosys",location:"Bengaluru",country:"India",no_of_employees:700},
+        {company:"TCS",location:"Povai Mumbai",country:"India",no_of_employees:800},
+        {company:"UST",location:"Trivandrum",country:"India",no_of_employees:600},
+        {company:"Nvidia",location:"Santa Clara",country:"USA",no_of_employees:900},
+        ]
+    }
+
+    let data = jsonRef['data']
+    let indian_companies = data.filter((elt)=>{
+        return elt.country == "India"
+    })
+    console.log(indian_companies);
+    
+    let total_emp_count = data.reduce((acc,elt)=>{
+        return acc+elt['no_of_employees']
+    },0)
+    console.log(total_emp_count)
+
+    </script>
+</head>
+<body>
+    
+    
+</body>
+</html>

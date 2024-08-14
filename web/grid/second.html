@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid exercise 2</title>
+</head>
+
+<style>
+    body{
+        background-color: black;
+        height:100vh;
+        width: 100vw;
+        padding: 20px;
+        margin: 0;
+    }
+    .grid-container{
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        display: grid;
+        grid-template: 1fr 1fr/1fr 1fr;
+        
+    }
+
+    .grid-container>div{
+       display: grid;
+    }
+
+    .cell1{
+        background-color: red;
+        justify-content: end;
+        align-content: end;
+    }
+
+    .cell2{
+        background-color: green;
+    }
+
+    .cell3{
+        background-color: purple;
+    }
+
+    .cell4{
+        background-color: yellow;
+    }
+</style>
+<body>
+
+    <div class="grid-container">
+
+
+       <div class="cell1">
+        <p>item1</p>
+       </div>
+       <div class="cell2">
+        <p>item2</p>
+       </div>
+       <div class="cell3">
+        <p>item3</p>
+       </div>
+       <div class="cell4">
+        <p>item4</p>
+       </div>
+    </div>
+    
+</body>
+</html>

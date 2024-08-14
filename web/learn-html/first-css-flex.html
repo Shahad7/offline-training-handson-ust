@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn html-with-divs</title>
+    <link rel="stylesheet" href="first-css-flex.css">
+  </head>
+  <body>
+   
+    <div class="row title-row heading">
+        <div>
+            <h4 id="top" class="title">Types of tags in html</h4>
+        </div>
+        <button id="top-btn" class="navigation-btn"><a href="#bottom" id="top">Go to bottom</a></button>
+    </div>
+    
+      <div class="row">
+          <div>
+                  Container tags which don't have their own content : table, body, head,
+                  div
+          </div>
+            <div>Standalone tags which can't be closed : br, img, hr</div>
+          
+              <div>
+                  Content tags which must be opened and closed the content is entered
+                  betweeen opening and closing : h1, h2 etc
+              </div>
+            <div>Parent and child tags : table, tr, td</div>
+            <div>Tags have attributes : id, class, href etc</div>
+      </div>
+    <div class="row">
+      <div class="cell">
+          Heading tags h1 to h6
+        
+            <div class="inner-row">
+                <div>
+                    <div style="background-color: cadetblue;">
+                        <h1>h1</h1>
+                    </div>
+                    <div style="background-color:darkseagreen;">
+                        <h2>h2</h2>
+                    </div>
+                    <div style="background-color: bisque;">
+                        <h3>h3</h3>
+                    </div>
+                </div>
+                <div>
+                    <div style="background-color: cornsilk;">
+                        <h4>h4</h4>
+                    </div>
+                    <div style="background-color: darkgray;">
+                        <h5>h5</h5>
+                    </div>
+                    <div style="background-color: darksalmon;">
+                        <h6>h6</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+      <div>Text formatting tags <b> &lt;b&gt; bold</b>, <i> &lt;i&gt; italics</i>, <u>&lt;u&gt; underline</u>, <strike> &lt;strike&gt; strikethrough</strike>, x&lt;sup&gt;2 - x <sup>2, y&lt;sub&gt;10 - y <sub> 10</sub></sup></div>
+      <div>Punctuation tags : <blockquote><p><q>You're a trillionare</p></blockquote><p></q>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Anil</p> </div>
+      
+      <div>&lt;p&gt; <p>For organizing content to logical paragraphs</p></div>
+      <div>&lt;a&gt; <a href="">click here</a></div>
+    </div>
+      <div class="row title-row">
+          <div>
+              <h4 class="title">Media tags</h4>
+          </div>
+      </div>
+      <div class="row">
+        <div>&lt;img/&gt; <img width="160" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDAzYWN4a29tbWVvaHM2YzRnNHY0ang3dHFwaXNyNjA3eWE4aWZ4MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZqlvCTNHpqrio/giphy.gif" alt="alt text"></div>
+        <div>&lt;video/&gt; <video src="sample.mp4" width="160" controls></video> </div>
+        <div>&lt;audio&gt; <audio src="fortune_days.mp3" controls></audio></div>
+        <div>&lt;iframe&gt; <iframe src="https://en.wikipedia.org/wiki/Cat" width="300" frameborder="0"></iframe></div>
+        <div>&lt;figure&gt; <figure><img src="wallhaven-x1ojzv.jpg" alt="random" width="140"><figcaption>Honour</figcaption></figure></div>
+      </div>
+      <div class="row title-row"><div><h4 class="title">Lits tags</h4></div></div>
+      <div class="row">
+        <div>&lt;ol&gt; <ol type="I"><li>item1</li>
+        <li>item2</li>
+        </ol></div>
+        <div>
+            &lt;ol&gt; <ol type="a"><li>item1</li>
+              <li>item2</li>
+        </div>
+            <div>&lt;ol&gt; <ol type="I"><li>item1</li>
+        <li>item2</li>
+       </ol></div>
+        <div>&lt;ul&gt; <ul type="square"><li>item1</li>
+        <li>item2</li>
+</ul></div>
+        <div>&lt;ul&gt; <ul type="disc"><li>item1</li>
+            <li>item2</li>
+           </ul></div>
+        
+        </div>
+    
+      <div class="row title-row"><div ><h4 class="title">Container tags and Semantic tags </h4></div></div>
+      <div class="row"> 
+        <div>
+            
+            <div class="container">
+                <div>
+                    &lt;div&gt;
+                    <h5>item1</h5>
+                    
+                </div>
+            </div>
+        </div>
+        <div>
+            <span class="content">
+                <span>
+                    &lt;span&gt;
+                    <h5>item1</h5>
+                  
+                </span>
+            </span>
+        </div>
+        <div>
+            &lt;head&gt; 
+            &lt;nav&gt;
+            <head>
+            <h5>heading</h6>
+            <nav>
+                <ul>
+                    <li><a href="http://">link1</a></li>
+                    <li><a href="http://">link2</a></li>
+                    <li><a href="http://">link3</a></li>
+                </ul>
+            </nav>
+        </head></div>
+        <div>
+            &lt;main&gt;
+            &lt;section&gt;
+            &lt;article&gt;
+            <main>
+            <section>
+                <article>
+                    <p>Lorem ipsum dolor sit</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <p>Eaque necessitatibus in corrupti.</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <p>Eveniet quos, perspiciatis consequatur</p>
+                </article>
+            </section>
+        </main></div>
+        <div>
+            &lt;head&gt; &lt;nav&gt; &lt;main&gt;
+            &lt;section&gt;
+            &lt;article&gt;&lt;aside&gt; &lt;footer&gt;
+            <head>
+                <h5>heading</h5>
+                <nav>
+                    <ul>
+                        <li><a href="">link1</a></li>
+                        <li><a href="">link2</a></li>
+                        <li><a href="">link3</a></li>
+                    </ul>
+                </nav>
+            </head>
+            <main>
+                <section>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, veritatis?</p>
+                    </article>
+                </section>
+               
+            </main>
+            <aside>
+                <ul>
+                    <li>item1</li>
+                    <li>item2</li>
+                </ul>
+            </aside>
+            <footer >
+                <ul>
+                    <li>item1</li>
+                    <li>item2</li>
+                </ul>
+            </footer>
+        </div>
+      </div>
+      <div class="row title-row">
+        <div >
+            <h4 class="title">Input tags</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            &lt;button&gt;
+            <button>Click here</button>
+        </div>
+        <div>
+            &lt;input type="checkbox"&gt;
+            <label for="">Option1</label>
+            <input type="checkbox" name="option1" id="" value="value1">
+            <label for="">Option2</label>
+            <input type="checkbox" name="option2" id="" value="value2">
+        </div>
+        <div>
+            &lt;input type="radio"&gt;
+            <label for="">Choice1</label>
+            <input type="radio" name="r1" id="" checked>
+            <label for="">Choice2</label>
+            <input type="radio" name="r1" id="">
+        </div>
+        <div>
+            &lt;input type="submit"&gt;
+            <input type="submit" value="Submit">
+        </div>
+        <div>
+            &lt;textarea name="textarea_name"&gt;
+            <textarea name="textarea" id="">Enter text here</textarea>
+        </div>
+    </div>
+    <div class="row">
+
+       
+            <div>
+                &lt;input type="date"&gt;
+                <input type="date" name="" id="" value=""></div>
+            <div> &lt;input type="time"&gt;
+                <input type="time" name="" id="" value=""></div>
+            <div> &lt;input type="text"&gt;
+                <input type="text" name="username" id="" value="" placeholder="Enter name here"></div>
+            <div> &lt;input type="number"&gt;
+                <input type="number" name="age" id="age" min="18" max="65"></div>
+            <div> &lt;input type="email"&gt;
+                <input type="email" name="" id=""></div>
+       
+    </div>
+    <div class="row">
+        <div>&lt;input type="range"&gt;
+            <input type="range" name="" id="" min="0" max="12">
+        </div>
+        <div>
+            &lt;input type="search"&gt;
+            <input type="search" name="" id="">
+        </div>
+        <div>
+            &lt;input type="color"&gt;
+            <input type="color" name="" id="">
+        </div>
+        <div>
+            &lt;select name=""&gt;
+            &lt;option value="op1"&gt;option1&lt;/option &gt;
+            <select name="" id="" multiple>
+                <option value="op1">option1</option>
+                <option value="op2">option2</option>
+                <option value="op3">option3</option>
+                
+            </select>
+        </div>
+        <div>
+            &lt;input type="file"&gt;
+            <input type="file" name="" id="">
+        </div>
+    </div>
+    <div class="row footing"><button class="navigation-btn"><a href="#top" id="bottom">Go to top</a></button></div>
+   
+    
+  </body>
+</html>

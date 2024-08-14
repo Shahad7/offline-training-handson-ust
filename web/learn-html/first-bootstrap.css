@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px;
+}
+audio,iframe{
+    width: 200px;
+}
+input[type="file"]{
+    width: 100px;
+}
+
+ol,ul{
+    display: table;
+    margin: 0 auto;
+}
+
+.barlow-condensed-semibold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: xx-large;
+  }
+
+  .libre-barcode-39-text-regular {
+    font-family: "Libre Barcode 39 Text", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:50px;
+  }
+  
+
+  .italianno-regular {
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+    <script defer>
+
+        function greet(){
+            console.log("greetings")
+        }
+
+        function showSeasons(){
+            var month = new Date().getMonth();
+           
+            if(month>=6&&month<=8)
+                console.log("Monsoon")
+        }
+
+        function colorGreen(){
+            const greenDiv = document.getElementById("green-div")
+            if(greenDiv.style.backgroundColor=='green'){
+                greenDiv.style.backgroundColor = 'initial'
+                greenDiv.style.color = 'black'
+                greenDiv.style.textAlign = 'initial'
+            }
+            else{
+                greenDiv.style.backgroundColor = 'green'
+                greenDiv.style.color = 'white'
+                greenDiv.style.textAlign = 'center'
+            }
+            
+        }
+
+        function colorBlue(){
+            const blueDiv = document.getElementById("blue-div")
+            if(blueDiv.style.backgroundColor=='blue'){
+                blueDiv.style.backgroundColor = 'initial'
+                blueDiv.style.color = 'black'
+                blueDiv.style.textAlign = 'initial'
+            }
+            else{
+                blueDiv.style.backgroundColor = 'blue'
+                blueDiv.style.color = 'white'
+                 blueDiv.style.textAlign = 'center'
+            }
+        }
+
+        function validate(){
+           let username = document.loginForm.username.value;
+           let password = document.loginForm.password.value;
+           if(username.length > 4)
+                return true;
+           return false;
+            
+        }
+
+    </script>
+</head>
+<body>
+    
+    <!-- <form action="">
+        <div id="green-div">div1 <br><br><br></div>
+        <div id="blue-div">div2 <br><br><br></div>
+        <input type="button" value="greet" onclick="greet()">
+        <input type="button" value="season" onclick="showSeasons()">
+        <input type="button" value="green" onclick="colorGreen()">
+        <input type="button" value="blue" onclick="colorBlue()">
+    </form> -->
+
+    <form action="" name="loginForm" method="post" onsubmit="return validate()" >
+        <fieldset style="display: flex;flex-direction: column; align-items:start; width: 20vw; gap: 10px;">
+            <legend>login form</legend>
+            <label for="username">username</label>
+            <input type="text" name="username" id="username">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </fieldset>
+
+    </form>
+</body>
+</html>

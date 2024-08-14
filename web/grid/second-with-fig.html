@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid exercise 2</title>
+</head>
+
+<style>
+    body{
+        min-height:100vh;
+        width: 100vw;
+        padding: 20px;
+        margin: 0;
+    }
+    .grid-container{
+        min-height: 100vh;
+        width: 100vw;
+        padding: 20px;
+        display: grid;
+        grid-template: 1fr 1fr/1fr 1fr;
+        grid-gap: 10px;
+        
+    }
+
+    .grid-container>div{
+       display: grid;
+       
+      
+    }
+
+    *{
+        color:black;
+    }
+    img{
+       aspect-ratio: 4/3;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+   
+
+   
+</style>
+<body>
+
+    <div class="grid-container">
+
+
+       <div class="cell1">
+       <figure><img src="images/img1.jpg" alt="">
+        <figcaption>War</figcaption>
+       </figure>
+       </div>
+       <div class="cell2">
+        <figure>
+            <img src="images/img2.jpg" alt="">
+            <figcaption>Peace</figcaption>
+        </figure>
+       </div>
+       <div class="cell3">
+        <figure>
+            <img src="images/img3.jpg" alt="">
+            <figcaption>Solitude</figcaption>
+        </figure>
+       </div>
+       <div class="cell4">
+        <figure>
+            <img src="images/img4.jpg" alt="">
+            <figcaption>Discipline</figcaption>
+        </figure>
+       </div>
+    </div>
+    
+</body>
+</html>
