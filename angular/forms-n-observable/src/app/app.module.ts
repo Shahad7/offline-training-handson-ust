@@ -10,7 +10,8 @@ import { ForbiddenPidDirective } from './forbidden-pid.directive';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormbuilderComponent } from './formbuilder/formbuilder.component';
-
+import { ProductFormComponent } from './server-comm-observable/product-form/product-form.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,14 +19,16 @@ import { FormbuilderComponent } from './formbuilder/formbuilder.component';
     MainComponent,
     ForbiddenPidDirective,
     ReactiveFormComponent,
-    FormbuilderComponent
+    FormbuilderComponent,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterOutlet,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

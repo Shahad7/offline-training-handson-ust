@@ -29,6 +29,7 @@ export class FormbuilderComponent implements OnInit{
         this.formBuilder.control('')
       ])
     })
+    // console.log(this.productForm)
   }
 
   get suppliers()
@@ -48,6 +49,7 @@ export class FormbuilderComponent implements OnInit{
   }
 
   OnSubmit(){
+      
       this.product.productId = this.productForm.controls['productId'].value
       this.product.brand = this.productForm.controls['brand'].value
       this.product.price = this.productForm.controls['price'].value
