@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormbuilderComponent } from './formbuilder/formbuilder.component';
 import { ProductFormComponent } from './server-comm-observable/product-form/product-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductlistComponent } from './server-comm-observable/productlist/productlist.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     ForbiddenPidDirective,
     ReactiveFormComponent,
     FormbuilderComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    ProductlistComponent
   ],
   imports: [
     BrowserModule,

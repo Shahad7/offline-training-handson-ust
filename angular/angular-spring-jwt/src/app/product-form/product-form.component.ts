@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Product } from '../../models/Product-simple';
-import { ProductService } from '../../product.service';
-
-
+import { Product } from '../models/Product-simple';
+import { ProductService } from '../product.service';
+import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 @Component({
+  standalone:true,
+  imports:[FormsModule,RouterLink,CommonModule,ReactiveFormsModule],
   selector: 'app-product-form',
   templateUrl: './product-form.component.html',
   styleUrl: './product-form.component.css'

@@ -1,9 +1,12 @@
-package com.handson.jpa.model;
+package com.security.demo.models;
 
-import jakarta.persistence.Entity;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import javax.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,6 +15,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table(name="Product")
 public class Product {
 	@Id
 	//identity strategy is most suitable for mysql db and it differs for other dbs!
